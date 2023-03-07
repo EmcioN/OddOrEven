@@ -19,6 +19,15 @@ body {
   padding: 0;        
   }
 
+/* Marble color */
+#marble-color{
+  background-color: #fff; 
+  border-radius: 50%; 
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  width: 2.5rem;
+  height: 2.5rem; 
+}
+
 /* footer section */
 
 #footer {
