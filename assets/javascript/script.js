@@ -12,7 +12,14 @@ form.addEventListener('submit', function(event) {
   const marble = marbleColor.value;
   playerMarble.style.backgroundColor = marble;
 });
-  
+
+// Starting marbles
+
+document.getElementById("player-marbles-count").textContent = "20";
+let playerMarblesCount = document.getElementById("player-marbles-count")
+document.getElementById("ai-marbles-count").textContent = "20";
+let aiMarblesCount = document.getElementById("ai-marbles-count")
+
 // Generate a random number 
 
 function generateAINumber() {
@@ -31,23 +38,35 @@ const evenButton = document.getElementById('even-button');
 const oddButton = document.getElementById('odd-button');
 const aiNumberSpan = document.getElementById('ai-number');
 const resultSpan = document.getElementById('result');
+const playerNumber = document.getElementById('player-number');
 
 evenButton.addEventListener('click', function() {    
     const aiNumber = generateAINumber();
     aiNumberSpan.textContent = aiNumber;    
     if (isEven(aiNumber)) {
+      playerNumber += playerMarblesCount;
       resultSpan.textContent = 'You win!';
     } else {
+      playerMarblesCount -= aiNumber;
+      aiNumber += aiMarblesCount;
       resultSpan.textContent = 'You lose!';
     }
+    updateMarbleCounts()
 });
 
 oddButton.addEventListener('click', function() {    
     const aiNumber = generateAINumber();
     aiNumberSpan.textContent = aiNumber;    
     if (!isEven(aiNumber)) {
+      playerNumber += playerMarblesCount;
       resultSpan.textContent = 'You win!';
     } else {
+      playerMarblesCount -= aiNumber;
+      aiNumber += aiMarblesCount;
       resultSpan.textContent = 'You lose!';
     }
+    updateMarbleCounts()
 });
+
+// Marble count updater
+
