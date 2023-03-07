@@ -19,14 +19,32 @@ body {
   padding: 0;        
   }
 
+/*Game section */
+
+#game-section {
+  display: flex;  
+  width: 2.5rem;
+  height: auto;
+}
+#player-side {
+  padding-right: 2rem;
+}
+
 /* Marble color */
 
-#marble-color{
+#marble-color {
   background-color: #fff; 
   border-radius: 50%; 
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
   width: 2.5rem;
   height: 2.5rem; 
+}
+#marble-color-ai {
+  background-color: #c70808; 
+  border-radius: 50%; 
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 /* footer section */
