@@ -3,10 +3,14 @@
 const form = document.getElementById('player-form');
 const nameInput = document.getElementById('name');
 const playerHeading = document.getElementsByTagName('h2')[2];
+const marbleColor = document.getElementById('color-picker');
+const playerMarble = document.getElementById('marble-color');
 form.addEventListener('submit', function(event) {
   event.preventDefault();
   const playerName = nameInput.value;
   playerHeading.innerText = `${playerName}`
+  const marble = marbleColor.value;
+  playerMarble.style.backgroundColor = marble;
 });
   
 // Generate a random number 
