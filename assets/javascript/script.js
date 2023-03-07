@@ -1,3 +1,14 @@
+// Set Player name 
+
+const form = document.getElementById('player-form');
+const nameInput = document.getElementById('name');
+const playerHeading = document.getElementsByTagName('h2')[2];
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const playerName = nameInput.value;
+  playerHeading.innerText = `${playerName}`
+});
+  
 // Generate a random number 
 
 function generateAINumber() {
