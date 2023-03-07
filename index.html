@@ -10,6 +10,9 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Game info -->
+    
     <div>
         <h1>Odd or Even</h1>        
     </div>
@@ -22,7 +25,10 @@
             number of marbles as the other player is holding.  
         </p>
     </div>
-    <form>
+
+    <!-- Player form -->
+
+    <form>        
         <div>
             <h2>
                 Chose Your Name
@@ -30,16 +36,19 @@
         </div>        
         <input type="text" id="name" name="name" required>        
         <button type="submit">Submit</button>
-    </form>
-    <div>
+        <div>
         <div>
             <h2>
                 Pick Your Color
             </h2>
         </div>
         <input type="color" id="color-picker">
-    </div>
-    <div id="game">
+        </div>
+    </form>
+
+    <!-- Game section-->
+
+    <div>
         <div>
           <h2>Player</h2>
           <p>Choose a number:</p>
@@ -54,7 +63,35 @@
           <p>Number chosen: <span id="ai-number"></span></p>
           <p>Result: <span id="result"></span></p>
         </div>
-      </div>
-      <script src="assets/javascript/script.js"></script> 
+    </div>
+
+    <!-- footer section -->
+
+    <footer id="footer">        
+        <span>Find Me on:</span>
+           <a href="https://www.twitch.tv" target="_blank" rel="noopener" aria-label="Find Me on Twitch">
+         Twitch 
+         <i class="fa-brands fa-twitch"></i>
+       </a>
+           <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Follow Me on YouTube">
+         YouTube 
+         <i class="fa-brands fa-youtube"></i>
+       </a>
+           <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find Me on Twitter">
+         Twitter 
+         <i class="fa-brands fa-twitter"></i>
+       </a>
+       <div id="copyright">
+         For Gamers By Gamer Emcio 2023
+       </div>
+      </footer>
+
+    <!-- Font awesome script  -->
+   
+    <script src="https://kit.fontawesome.com/d40136166e.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript-->
+
+    <script src="assets/javascript/script.js"></script> 
 </body>
 </html>

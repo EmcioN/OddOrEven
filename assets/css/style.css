@@ -18,3 +18,28 @@ body {
   margin: 0;
   padding: 0;        
   }
+
+/* footer section */
+
+#footer {
+  background: #343536;
+  height: 10rem;
+  width: 100%;  
+  color: #ffffff;
+  padding: 2rem;
+  text-align:center;
+  margin: 0;     
+ }
+
+ #footer a {
+  text-decoration: none;
+  color:#ffffff;
+ }
+
+ #footer a:hover {
+  text-transform: uppercase;
+ }
+
+ #copyright {  
+  padding: 1.5rem; 
+ }
